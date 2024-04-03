@@ -1,7 +1,8 @@
 import { tabs } from "webextension-polyfill";
-
+// Click 
 export async function getCurrentTab() {
     const list = await tabs.query({active: true, currentWindow: true})
 
     return list[0]
 }
+// Click 

@@ -1,5 +1,5 @@
 import { runtime, storage, tabs } from "webextension-polyfill";
-
+//Click
 type Message = {
     from: string
     to: string
@@ -35,6 +35,7 @@ export async function init() {
         }
     })
 }
+// Click 
 
 runtime.onInstalled.addListener(() => {
     init().then(() => {

@@ -3,6 +3,7 @@ import { runtime } from "webextension-polyfill";
 
 console.log("[content] loaded")
 
+// Click 
 type Listener = (event: MouseEvent) => void
 
 let count = 0
@@ -25,6 +26,7 @@ function countClicks() {
 export function init() {
     registerClickListener(countClicks)
 }
+// Click 
 
 // const response = await api.asUser().requestJira(route`/rest/api/2/task/{taskId}`, {
 //   headers: {

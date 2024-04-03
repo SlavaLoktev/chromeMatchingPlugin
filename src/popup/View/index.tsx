@@ -5,6 +5,7 @@ import { storage } from "webextension-polyfill";
 
 export const View = () => {
 
+    // Click 
     const [value, setValue] = useState()
 
     useEffect(() => {
@@ -21,6 +22,7 @@ export const View = () => {
         }
         readBackgroundMessage()
     }, [])
+    // Click 
 
     // const [value, setValue] = useState<any | null>(null);
 
